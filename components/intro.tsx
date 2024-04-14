@@ -3,9 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {BsArrowRight, BsInstagram, BsLinkedin, BsTwitter} from "react-icons/bs";
+import {BsArrowRight, BsInstagram, BsWhatsapp} from "react-icons/bs";
 import {HiDownload} from "react-icons/hi";
-import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -90,12 +89,18 @@ export default function Intro() {
             </a>
 
             <a className='group bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full 
-            outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer'>
-                <BsTwitter className='group-hover:translate-y-1 transition'/>
+            outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer'
+            href='https://wa.me/254729232404'
+            target="_blank"
+            >
+                <BsWhatsapp className='group-hover:translate-y-1 transition'/>
             </a>
 
             <a className='group bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
-            outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition cursor-pointer'>
+            outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition cursor-pointer'
+            href="https://www.instagram.com/invites/contact/?i=1dnjmcel1ear&utm_content=nwf6opl"
+            target="_blank"
+            >
                 <BsInstagram className='group-hover:translate-y-1 transition'/>
             </a>
         </motion.div>
